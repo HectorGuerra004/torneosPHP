@@ -1,0 +1,99 @@
+.registro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Dos imágenes con el formulario en el centro */
+    gap: 20px;
+    align-items: center;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+  }
+  
+  .right-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .form-container {
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form a {
+    color: inherit; /* Usa el color actual del texto del formulario */
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold; /* Opcional: agrega negritas */
+    text-align: center;
+  }
+  
+  form a:hover {
+    color: #28a745; /* Cambia el color al pasar el mouse, por ejemplo verde */
+  }
+  
+  .olvidar-contraseña{
+  margin-bottom: 1vh;
+  }
+  
+  .registrate{
+    margin-top: 1vh;
+  }
+  
+  form label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form i {
+    position: relative;
+    right: 10px;
+  }
+  
+  button {
+    background-color: #021646;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+  
+    .right-image {
+      display: none;
+    }
+
+    .registro{
+      display: block;
+    }
+  
+  }
+
+  

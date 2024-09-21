@@ -1,0 +1,104 @@
+:root{
+    --primary-color: #03090a;
+    --secondary-color: #000000;
+    --tertiary-color: #fff;
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+.figure-footer{
+    height: 4em;
+    filter: drop-shadow(0 0 0.20rem rgba(0, 0, 0, 0.500));
+}
+
+.a_footer{
+    color: var(--tertiary-color) !important;
+
+}
+
+.info-company {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.info-item > span {
+    font-size: 17px;
+    color: var(--tertiary-color);
+}
+
+@media (max-width:990px) {
+    .info-item > span {
+        font-size: 13px;
+    }
+
+    .link-footer > a {
+        font-size: 13px !important;
+    }
+
+    .h4-footer > h4{
+        font-size: 1em;
+    }
+
+    .policy-footer > span {
+        font-size: 10px !important;
+    }
+    
+    .policy-footer > span > a {
+        font-size: 10px !important;
+    }
+    
+}
+
+.h4-footer{
+    align-items: center;
+    height: 4em;
+    color: #ffffff;
+}
+
+.link-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+.link-footer > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    transition: 0.3s all;
+}
+
+.policy-footer > span {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.policy-footer > span > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    transition: 0.3s all;
+}
+
+.social-footer{
+    justify-content: end;
+    gap: 20px;
+}
+
+.social-footer > a{
+    transition: 0.5s ease all;
+}
+
+.social-footer > a:hover{
+    transition: 0.5s ease all;
+    transform: scale(1.12);
+}

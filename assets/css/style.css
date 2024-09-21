@@ -1,0 +1,371 @@
+body {
+    background-image: url('../img/pastoFutbol.jpeg');
+    background-size: cover;
+    /* Ajusta la imagen para que cubra toda la pantalla */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* La imagen se queda fija al hacer scroll */
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 3vh;
+    transition: color 0.3s ease, transform 0.3s ease; /* Suaviza la transición */
+}
+
+.nav-link:hover {
+    color: limegreen; /* Color del texto al hacer hover */
+    transform: scale(1.1); /* Efecto de agrandamiento al hacer hover */
+    text-decoration: underline; /* Subraya el texto */
+}
+
+.navbar-brand{
+    color: white !important;
+    font-size: 3vh; 
+}
+
+.container-fluid-index {
+    margin-left: 8vh;
+    margin-right: 8vh;
+    display: flex;
+    /* justify-content: space-between; */
+    height: 80vh;
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.left,
+.right {
+    width: 48%;
+    /* Ambos contenedores ocuparán el 48% del ancho en pantallas grandes */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .left {
+    background-color: #f0f0f0;
+  } */
+
+.right {
+    /* background-color: #e0e0e0; */
+    margin-top: 23vh;
+}
+
+.imgFlecha1 {
+    width: 20%;
+    transform: rotate(315deg) scaleY(-1);
+}
+
+.imgFlecha2 {
+    width: 15%;
+    transform: rotate(40deg);
+}
+
+.textoIndexTitulo {
+    font-size: 10vh !important;
+    color: white !important;
+    word-spacing: 4vh;
+    text-indent: 4vh;
+
+}
+
+.textoIndex {
+    color: white !important;
+    font-size: 3.5vh !important;
+    text-align: justify;
+}
+
+.cuerpo {
+    color: limegreen;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.container-cuerpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.terminal-frame {
+    position: relative;
+    border: 2px solid limegreen;
+    width: 80vw;
+    /* El contenedor ocupa el 80% del ancho de la pantalla */
+    height: 50vh;
+    /* El contenedor ocupa el 40% de la altura de la pantalla */
+}
+
+.terminalFrame {
+    position: relative;
+    border: 2px solid limegreen;
+}
+
+.terminal-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Hace que la imagen se ajuste al contenedor */
+    border: 1px solid limegreen;
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: black;
+    color: limegreen;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.terminal-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: limegreen;
+}
+
+.terminal-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: black;
+    color: limegreen;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-left::before,
+.arrow-right::before {
+    content: "<";
+    padding: 0 5px;
+}
+
+.arrow-right::before {
+    content: ">";
+}
+
+.index-segunda {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #03090a;
+}
+
+.index-segunda div {
+    color: white;
+    vertical-align: middle;
+}
+
+.svg-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.sobreNosotros {
+    gap: 1vh;
+}
+
+
+/* Ajustes para pantallas pequeñas (max-width: 768px, por ejemplo) */
+
+/******************/
+/* SOBRE NOSOTROS */
+/******************/
+
+/* Contenedor principal con grid */
+.container-grid {
+    margin-left: 8vh;
+    margin-right: 8vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    align-items: stretch;
+    /* Estira ambas columnas para que tengan la misma altura */
+    padding: 3vh;
+}
+
+/* Parte izquierda (ajustada al contenido) */
+.left-section {
+    background-color: #03090a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+    height: auto;
+    color: white;
+}
+
+/* Parte derecha (ajustada a la altura de la izquierda) */
+.right-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    height: 100%;
+    /* Se ajusta a la altura de la columna izquierda */
+}
+
+/* Estilo de las imágenes para que se ajusten */
+.top-right img,
+.bottom-right-left img,
+.bottom-right-right img {
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+    /* Mantener la proporción sin distorsión */
+}
+
+/* Parte inferior derecha dividida en dos columnas */
+.bottom-right {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+}
+
+/* Columnas dentro de la parte inferior derecha */
+.bottom-right-left,
+.bottom-right-right {
+    flex: 1;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 25em;
+}
+
+ul.lista-1 {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul.lista-1 li::before {
+    content: "\f00c"; /* Código del icono de check de Font Awesome */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; /* Asegúrate de incluirlo para que el ícono se muestre */
+    padding-right: 10px; /* Espacio entre el ícono y el texto */
+    color: #00A651; /* Cambia el color si lo deseas */
+  }
+
+@media (max-width: 1640px) {
+    .imgFlecha1 {
+        width: 15%;
+    }
+
+    .imgFlecha2 {
+        width: 10%;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente oscuro */
+        /* O puedes usar un color sólido */
+        /* background-color: #000000; */ /* Fondo negro */
+    }
+}
+
+/* ---- ESTILOS RESPONSIVOS PARA TELÉFONOS ---- */
+@media (max-width: 768px) {
+
+    .container-fluid-index {
+        margin-left: 6vh;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        /* Los contenedores ocuparán el 100% del ancho en pantallas pequeñas */
+        margin-bottom: 20px;
+        /* Espacio entre los contenedores */
+    }
+
+    .textoIndexTitulo {
+        font-size: 5vh !important;
+        color: white !important;
+        word-spacing: 1vh;
+        text-indent: 4vh;
+
+    }
+
+    .textoIndex {
+        color: white !important;
+        font-size: 3.5vh !important;
+        text-align: justify;
+    }
+
+    .right {
+        /* background-color: #e0e0e0; */
+        margin-top: 3vh;
+    }
+
+    .parteDos {
+        margin-top: 30vh;
+    }
+
+    .parteDos div {
+        font-size: 2vh;
+    }
+
+    .textoDos div {
+        padding: 25px;
+    }
+
+    /******************/
+    /* SOBRE NOSOTROS */
+    /******************/
+
+    .container-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-left: 1vh;
+        margin-right: 1vh;
+    }
+
+    .top-right img,
+    .bottom-right-left img,
+    .bottom-right-right img {
+        width: 100%;
+        height: 10em;
+        object-fit: cover;
+        /* Mantener la proporción sin distorsión */
+    }
+
+    /* Add these styles to remove the extra space */
+    .left-section,
+    .right-section {
+        padding: 2vh;
+    }
+
+    .bottom-right {
+        gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .bottom-right-left,
+    .bottom-right-right {
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .imgFlecha1,
+    .imgFlecha2 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .parteDos {
+        margin-top: 50vh;
+    }
+}
